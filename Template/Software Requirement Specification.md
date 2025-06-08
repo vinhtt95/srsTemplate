@@ -30,6 +30,8 @@ Mô tả bối cảnh và nguồn gốc của sản phẩm. Nó có phải là t
 
 Xác định các lớp người dùng khác nhau mà bạn dự đoán sẽ sử dụng sản phẩm này, và mô tả các đặc điểm liên quan của họ. Một số yêu cầu có thể chỉ liên quan đến một số lớp người dùng nhất định. Xác định các lớp người dùng được ưu tiên. Các lớp người dùng đại diện cho một tập hợp con của các bên liên quan được mô tả trong vision and scope document (tài liệu tầm nhìn và phạm vi). Các mô tả lớp người dùng là một nguồn tài nguyên có thể tái sử dụng. Nếu có một danh mục lớp người dùng chính, bạn có thể kết hợp các mô tả lớp người dùng bằng cách chỉ vào chúng trong danh mục thay vì sao chép thông tin ở đây.
 
+<table><tbody><tr><td>User Class 1</td><td>Mô tả ngắn</td></tr><tr><td>User Class 2</td><td>Mô tả ngắn</td></tr><tr><td>User Class 3</td><td>Mô tả ngắn</td></tr><tr><td>User Class 4</td><td>Mô tả ngắn</td></tr></tbody></table>
+
 ## **2.3 Operating environment**
 
 Mô tả môi trường mà phần mềm sẽ hoạt động, bao gồm nền tảng phần cứng; hệ điều hành và phiên bản; vị trí địa lý của người dùng, máy chủ, và cơ sở dữ liệu; và các tổ chức lưu trữ các cơ sở dữ liệu, máy chủ, và trang web liên quan. Liệt kê bất kỳ thành phần hoặc ứng dụng phần mềm nào khác mà hệ thống phải cùng tồn tại hòa bình. Nếu cần thực hiện công việc cơ sở hạ tầng kỹ thuật rộng rãi cùng với việc phát triển hệ thống mới, hãy cân nhắc tạo một đặc tả yêu cầu cơ sở hạ tầng riêng để chi tiết hóa công việc đó.
@@ -57,7 +59,10 @@ Cung cấp một mô tả ngắn về tính năng và chỉ ra liệu nó có m�
 
 ### **3.1.2 Functional requirements**
 
-Liệt kê các functional requirement (yêu cầu chức năng) cụ thể liên quan đến tính năng này. Đây là những khả năng phần mềm phải được triển khai để người dùng thực hiện các dịch vụ của tính năng hoặc thực hiện một use case (trường hợp sử dụng). Mô tả cách sản phẩm nên phản ứng với các điều kiện lỗi dự kiến và các đầu vào và hành động không hợp lệ. Gắn nhãn duy nhất cho mỗi functional requirement (yêu cầu chức năng). Nếu bạn đang sử dụng một requirements management tool (công cụ quản lý yêu cầu), bạn có thể tạo nhiều thuộc tính cho mỗi functional requirement (yêu cầu chức năng), như lý do, nguồn gốc, và trạng thái.
+Liệt kê các functional requirement (yêu cầu chức năng) cụ thể liên quan đến tính năng này. Đây là những khả năng phần mềm phải được triển khai để người dùng thực hiện các dịch vụ của tính năng hoặc thực hiện một use case (trường hợp sử dụng). Mô tả cách sản phẩm nên phản ứng với các điều kiện lỗi dự kiến và các đầu vào và hành động không hợp lệ. Gắn nhãn duy nhất cho mỗi functional requirement (yêu cầu chức năng). Nếu bạn đang sử dụng một requirements management tool (công cụ quản lý yêu cầu), bạn có thể tạo nhiều thuộc tính cho mỗi functional requirement (yêu cầu chức năng), như lý do, nguồn gốc, và trạng thái.  
+ 
+
+<table><tbody><tr><td colspan="2"><strong>Name.Of.Func1</strong></td></tr><tr><td>.Create:</td><td>Mô tả</td></tr><tr><td>.Update:</td><td>Mô tả</td></tr><tr><td colspan="2"><strong>Name.Of.Func2</strong></td></tr><tr><td>.Create:</td><td>Mô tả</td></tr><tr><td>.Update:</td><td>Mô tả</td></tr><tr><td>.View:</td><td>Mô tả</td></tr><tr><td>.Delete:</td><td>Mô tả</td></tr></tbody></table>
 
 # **4\. Data requirements**
 
@@ -71,9 +76,13 @@ Mô hình dữ liệu là một biểu diễn trực quan của các đối tư�
 
 Từ điển dữ liệu định nghĩa thành phần của các cấu trúc dữ liệu và ý nghĩa, kiểu dữ liệu, độ dài, định dạng, và các giá trị được phép cho các phần tử dữ liệu tạo nên các cấu trúc đó. Các công cụ mô hình hóa dữ liệu thương mại thường bao gồm một thành phần từ điển dữ liệu. Trong nhiều trường hợp, bạn nên lưu trữ từ điển dữ liệu như một hiện vật riêng biệt, thay vì nhúng nó vào giữa SRS. Điều này cũng làm tăng tiềm năng tái sử dụng trong các dự án khác.
 
+<table><tbody><tr><td><p style="text-align:center;"><strong>Data Element</strong></p></td><td><p style="text-align:center;"><strong>Description</strong></p></td><td><p style="text-align:center;"><strong>Composition or Data Type</strong></p></td><td><p style="text-align:center;"><strong>Length</strong></p></td><td><p style="text-align:center;"><strong>Values</strong></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
+
 ## **4.3 Reports**
 
 Nếu ứng dụng của bạn sẽ tạo ra bất kỳ báo cáo nào, hãy xác định chúng ở đây và mô tả các đặc điểm của chúng. Nếu một báo cáo phải tuân theo một bố cục được xác định trước cụ thể, bạn có thể chỉ định điều đó ở đây như một ràng buộc, có thể với một ví dụ. Nếu không, hãy tập trung vào các mô tả logic của nội dung báo cáo, trình tự sắp xếp, các mức tổng hợp, v.v., hoãn bố cục báo cáo chi tiết sang giai đoạn thiết kế.
+
+<table><tbody><tr><td><p style="text-align:right;">Report ID:</p></td><td>&nbsp;</td></tr><tr><td><p style="text-align:right;">Report Title:</p></td><td>&nbsp;</td></tr><tr><td><p style="text-align:right;">Report Purpose:</p></td><td>&nbsp;</td></tr><tr><td><p style="text-align:right;">Priority:</p></td><td>&nbsp;</td></tr><tr><td><p style="text-align:right;">Report Users:</p></td><td>&nbsp;</td></tr><tr><td><p style="text-align:right;">Data Sources:</p></td><td>&nbsp;</td></tr><tr><td><p style="text-align:right;">Frequency and Disposition;</p></td><td>&nbsp;</td></tr><tr><td><p style="text-align:right;">Latency:</p></td><td>&nbsp;</td></tr><tr><td><p style="text-align:right;">Visual Layout:</p></td><td>&nbsp;</td></tr><tr><td><p style="text-align:right;">Header and Footer:</p></td><td>&nbsp;</td></tr><tr><td><p style="text-align:right;">Report Body:</p></td><td>&nbsp;</td></tr><tr><td><p style="text-align:right;">End-of-Report Indicator:</p></td><td>&nbsp;</td></tr><tr><td><p style="text-align:right;">Interactivity:</p></td><td>&nbsp;</td></tr><tr><td><p style="text-align:right;">Security Access Restrictions:</p></td><td>&nbsp;</td></tr></tbody></table>
 
 ## **4.4 Data acquisition, integrity, retention, and disposal**
 
@@ -95,7 +104,7 @@ Mô tả các đặc điểm logic của mỗi giao diện người dùng mà h�
 *   Quy ước hiển thị và diễn đạt thông báo.
 *   Hướng dẫn xác thực dữ liệu (như hạn chế giá trị đầu vào và khi nào xác thực nội dung trường).
 *   Tiêu chuẩn bố cục để hỗ trợ bản địa hóa phần mềm.
-*   Các điều chỉnh cho người dùng bị khiếm thị, mù màu, hoặc có các hạn chế khác.  
+*   Các điều chỉnh cho người dùng bị khiếm thị, mù màu, hoặc có các hạn chế khác.
 
 ## **5.2 Software interfaces**
 
