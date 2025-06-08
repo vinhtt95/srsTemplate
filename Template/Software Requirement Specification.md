@@ -1,6 +1,6 @@
 # **Introduction**
 
-# Phần giới thiệu trình bày một cái nhìn tổng quan để giúp người đọc hiểu cách tổ chức SRS và cách sử dụng nó.
+Phần giới thiệu trình bày một cái nhìn tổng quan để giúp người đọc hiểu cách tổ chức SRS và cách sử dụng nó.
 
 ## **Purpose**
 
