@@ -63,7 +63,7 @@
 6.  **Quality attributes**  
     Phần này chỉ định các nonfunctional requirement (yêu cầu phi chức năng) ngoài các ràng buộc, được ghi lại trong phần 2.4, và các yêu cầu giao diện bên ngoài, xuất hiện trong phần 5. Những yêu cầu phẩm chất này nên cụ thể, định lượng, và có thể kiểm chứng. Chỉ ra mức độ ưu tiên tương đối của các phẩm chất khác nhau, như dễ sử dụng so với dễ học, hoặc bảo mật so với hiệu suất. Một ký hiệu đặc tả phong phú như Planguage làm rõ mức độ cần thiết của mỗi phẩm chất tốt hơn nhiều so với các tuyên bố mô tả đơn giản.
     1.  **Tính khả dụng**  
-        Yêu cầu tính khả dụng liên quan đến việc dễ học, dễ sử dụng, tránh và phục hồi lỗi, hiệu quả của các tương tác, và khả năng tiếp cận. Các yêu cầu tính khả dụng được chỉ định ở đây sẽ giúp nhà thiết kế giao diện người dùng tạo ra trải nghiệm người dùng tối ưu.  
+        Yêu cầu tính khả dụng liên quan đến việc dễ học, dễ sử dụng, tránh và phục hồi lỗi, hiệu quả của các tương tác, và khả năng tiếp cận. Các yêu cầu tính khả dụng được chỉ định ở đây sẽ giúp nhà thiết kế giao diện người dùng tạo ra trải nghiệm người dùng tối ưu.
     2.  **Hiệu suất**  
         Nêu các yêu cầu hiệu suất cụ thể cho các hoạt động hệ thống khác nhau. Nếu các functional requirement (yêu cầu chức năng) hoặc tính năng khác nhau có các yêu cầu hiệu suất khác nhau, thì nên chỉ định các mục tiêu hiệu suất đó ngay cùng với các functional requirement (yêu cầu chức năng) tương ứng, thay vì tập hợp chúng trong phần này.  
     3.  **Bảo mật**  
