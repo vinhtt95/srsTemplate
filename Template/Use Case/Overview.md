@@ -2,9 +2,7 @@
 
 | Primary actor | Use cases |
 | --- | --- |
-| Patron |   |
-| Menu Manager |   |
-
-| Cafeteria Staff |   |
-
-| Meal Deliverer |   |
+| Actor A |   |
+| Actor B |   |
+| Actor C |   |
+| Actor D |   |
