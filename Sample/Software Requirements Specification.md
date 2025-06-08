@@ -1,6 +1,6 @@
 # **Introduction**
 
-## **Purpose** 
+## **Purpose**
 
 This SRS describes the functional and nonfunctional requirements for software release 1.0 of the Cafeteria Ordering System (COS). This document is intended to be used by the members of the project team who will implement and verify the correct functioning of the system. Unless otherwise noted, all requirements specified here are committed for release 1.0.
 
@@ -24,12 +24,11 @@ The COS will permit Process Impact employees to order meals from the company caf
 
 The Cafeteria Ordering System is a new software system that replaces the current manual and telephone processes for ordering and picking up meals in the Process Impact cafeteria. The context diagram in Figure 1 illustrates the external entities and system interfaces for release 1.0. The system is expected to evolve over several releases, ultimately connecting to the Internet ordering services for several local restaurants and to credit and debit card authorization services.
 
-##   
 **User Classes and Characteristics**
 
 <table><tbody><tr><td>Patron (favored)</td><td>A Patron is a Process Impact employee who wants to order meals to be delivered from the company cafeteria. There are about 600 potential Patrons, of which 300 are expected to use the COS an average of 5 times per week each. Patrons will sometimes order multiple meals for group events or guests. An estimated 60 percent of orders will be placed using the corporate Intranet, with 40 percent of orders being placed from home or by smartphone or tablet apps.</td></tr><tr><td>Cafeteria Staff</td><td>The Process Impact cafeteria employs about 20 Cafeteria Staff, who will receive orders from the COS, prepare meals, package them for delivery, and request delivery. Most of the Cafeteria Staff will need training in the use of the hardware and software for the COS.</td></tr><tr><td>Menu Manager</td><td>The Menu Manager is a cafeteria employee who establishes and maintains daily menus of the food items available from the cafeteria. Some menu items may not be available for delivery. The Menu Manager will also define the cafeteria’s daily specials. The Menu Manager will need to edit existing menus periodically.</td></tr><tr><td>Meal Deliverer</td><td>As the Cafeteria Staff prepare orders for delivery, they will issue delivery requests to a Meal Deliverer's smartphone. The Meal Deliverer will pick up the food and deliver it to the Patron. A Meal Deliverer’s other interactions with the COS will be to confirm that a meal was (or was not) delivered.</td></tr></tbody></table>
 
-## **Operating Environment** 
+## **Operating Environment**
 
 OE-1: The COS shall operate correctly with the following web browsers: Windows Internet Explorer versions 7, 8, and 9; Firefox versions 12 through 26; Google Chrome (all versions); and Apple Safari versions 4.0 through 8.0.
 
@@ -79,8 +78,7 @@ _\[Details are not provided in this example.\]_
 
 _\[Details are not provided in this example.\]_
 
-#   
-**Data Requirements**
+# **Data Requirements**
 
 ## **Logical Data Model**
 
@@ -96,7 +94,7 @@ _\[Details are not provided in this example.\]_
 
 ### **Ordered Meal History Report**
 
-<table><tbody><tr><td><p style="text-align:right;">Report ID:</p></td><td>COS-RPT-1</td></tr><tr><td><p style="text-align:right;">Report Title:</p></td><td>Ordered Meal History</td></tr><tr><td><p style="text-align:right;">Report Purpose:</p></td><td>Patron wants to see a list of all meals that he had previously ordered from the Process Impact cafeteria or local restaurants over a specified time period up to six months prior to the current date, so he can reorder a particular meal he liked.</td></tr><tr><td><p style="text-align:right;">Priority:</p></td><td>Medium</td></tr><tr><td><p style="text-align:right;">Report Users:</p></td><td>Patrons</td></tr><tr><td><p style="text-align:right;">Data Sources:</p></td><td>Database of previously placed meal orders</td></tr><tr><td><p style="text-align:right;">Frequency and Disposition;</p></td><td>Report is generated on demand by a Patron. Data in the report is static. Report is displayed on user's web browser screen on a computer, tablet, or smartphone. It can be printed if the display device permits printing.</td></tr><tr><td><p style="text-align:right;">Latency:</p></td><td>Complete report must be displayed to Patron within 3 seconds after it is requested.&nbsp;</td></tr><tr><td><p style="text-align:right;">Visual Layout:</p></td><td>Landscape mode</td></tr><tr><td><p style="text-align:right;">Header and Footer:</p></td><td>Report header shall contain the report title, Patron's name, and date range specified. If printed, report footer shall show the page number.</td></tr><tr><td><p style="text-align:right;">Report Body:</p></td><td><p>Fields shown and column headings:&nbsp;</p><ul><li>Order Number</li><li>Meal Date</li><li>Ordered From ("Cafeteria" or restaurant name)</li><li>Items ordered (list all items in the meal order, their quantity, and their prices)</li><li>Total Food Price</li><li>Tax</li><li>Delivery Charge</li><li>Total Price (sum of food item prices, tax, and delivery charge)</li></ul><p><br>&nbsp;</p><p>Selection Criteria: date range specified by Patron, inclusive of end points</p><p>Sort Criteria: reverse chronological order</p></td></tr><tr><td><p style="text-align:right;">End-of-Report Indicator:</p></td><td>None</td></tr><tr><td><p style="text-align:right;">Interactivity:</p></td><td>Patron can drill down to see ingredients and nutritional information for each item in the order</td></tr><tr><td><p style="text-align:right;">Security Access Restrictions:</p></td><td>A Patron may retrieve only his own meal order history</td></tr></tbody></table>
+<table><tbody><tr><td><p style="text-align:right;">Report ID:</p></td><td>COS-RPT-1</td></tr><tr><td><p style="text-align:right;">Report Title:</p></td><td>Ordered Meal History</td></tr><tr><td><p style="text-align:right;">Report Purpose:</p></td><td>Patron wants to see a list of all meals that he had previously ordered from the Process Impact cafeteria or local restaurants over a specified time period up to six months prior to the current date, so he can reorder a particular meal he liked.</td></tr><tr><td><p style="text-align:right;">Priority:</p></td><td>Medium</td></tr><tr><td><p style="text-align:right;">Report Users:</p></td><td>Patrons</td></tr><tr><td><p style="text-align:right;">Data Sources:</p></td><td>Database of previously placed meal orders</td></tr><tr><td><p style="text-align:right;">Frequency and Disposition;</p></td><td>Report is generated on demand by a Patron. Data in the report is static. Report is displayed on user's web browser screen on a computer, tablet, or smartphone. It can be printed if the display device permits printing.</td></tr><tr><td><p style="text-align:right;">Latency:</p></td><td>Complete report must be displayed to Patron within 3 seconds after it is requested.&nbsp;</td></tr><tr><td><p style="text-align:right;">Visual Layout:</p></td><td>Landscape mode</td></tr><tr><td><p style="text-align:right;">Header and Footer:</p></td><td>Report header shall contain the report title, Patron's name, and date range specified. If printed, report footer shall show the page number.</td></tr><tr><td><p style="text-align:right;">Report Body:</p></td><td><p>Fields shown and column headings:&nbsp;</p><ul><li>Order Number</li><li>Meal Date</li><li>Ordered From ("Cafeteria" or restaurant name)</li><li>Items ordered (list all items in the meal order, their quantity, and their prices)</li><li>Total Food Price</li><li>Tax</li><li>Delivery Charge</li><li>Total Price (sum of food item prices, tax, and delivery charge)</li></ul><p>Selection Criteria: date range specified by Patron, inclusive of end points</p><p>Sort Criteria: reverse chronological order</p></td></tr><tr><td><p style="text-align:right;">End-of-Report Indicator:</p></td><td>None</td></tr><tr><td><p style="text-align:right;">Interactivity:</p></td><td>Patron can drill down to see ingredients and nutritional information for each item in the order</td></tr><tr><td><p style="text-align:right;">Security Access Restrictions:</p></td><td>A Patron may retrieve only his own meal order history</td></tr></tbody></table>
 
 _\[Note: Other COS reports are not provided in this example.\]_
 
@@ -108,7 +106,7 @@ DI-2: The COS shall retain menus for one year following the menu date.
 
 # **External Interface Requirements**
 
-##  **User Interfaces**
+## **User Interfaces**
 
 UI-1: The Cafeteria Ordering System screen displays shall conform to the _Process Impact Internet Application User Interface Standard, Version 2.0_ \[3\].
 
@@ -116,7 +114,7 @@ UI-2: The system shall provide a help link from each displayed webpage to explai
 
 UI-3: The webpages shall permit complete navigation and food item selection by using the keyboard alone, in addition to using mouse and keyboard combinations.
 
-##  **Software Interfaces**
+## **Software Interfaces**
 
 SI-1: Cafeteria Inventory System
 
